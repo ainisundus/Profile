@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  
+  .tl-justify {
+    text-align: justify;
+  }  
+  .tl-center {
+    text-align: center;
+  }
+  .profile header {
+    text-align: center;
+  }
+  .jumbotron {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+  }
+  
+  h2, h3 {
+    color: #5089b8;
+  }
+   
+  footer {
+    padding: 5px;
+    color: white;
+    background-color: #5daa57;
+  }
+  nav {
+    background-color: #5daa57;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+  }
+   
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 1rem;
+  }
+   
+  nav li {
+    list-style-type: none;
+
+  }
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+   
+    color: white;
+  }
+   
+  nav a:hover {
+    font-weight: bold;
+  }
+  main {
+    padding: 20px;
+   
+    display: flex;
+    gap: 1.5rem;
+  }
+  #content {
+    flex: 5;
+  }
+   
+  aside {
+    flex: 1;
+  }
+  .item {
+    flex: 0; /*flex-grow*/
+  }
+  .item {
+    flex: 0 1; /*flex-grow flex-shrink*/
+  }
+  .item {
+    flex: 0 auto; /*flex-grow flex-basis*/
+  }
+  .item {
+    flex: 0 1 auto; /*flex-grow flex-shrink flex-basis*/
+  }
+  #content {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .item {
+    flex-flow: column; /*flex-direction*/
+  }
+   
+  .item {
+    flex-flow: wrap; /*flex-wrap*/
+  }
+   
+  .item {
+    flex-flow: column wrap; /*flex-direction flex-wrap*/
+  }
+  #content {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+   
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+   
+.profile img {
+    width: 200px;
+  }
+   
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+   
+  @media screen and (max-width: 1200px) {}
+  @media screen and (max-width: 768px) {}
+  
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {}
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
